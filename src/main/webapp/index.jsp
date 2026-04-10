@@ -1,99 +1,63 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Library Management System</title>
+<meta charset="UTF-8">
+<title>Library Menu</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #667eea, #764ba2);
-        }
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #74ebd5, #ACB6E5);
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
 
-        .header {
-            text-align: center;
-            padding: 20px;
-            color: white;
-            font-size: 28px;
-            font-weight: bold;
-        }
+    h2 {
+        margin-top: 40px;
+        color: #333;
+    }
 
-        .container {
-            width: 80%;
-            margin: 40px auto;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
+    .menu-container {
+        background: white;
+        width: 300px;
+        margin: 40px auto;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
 
-        .card {
-            background: white;
-            padding: 30px;
-            text-align: center;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            transition: 0.3s;
-        }
+    a {
+        display: block;
+        text-decoration: none;
+        background: #4CAF50;
+        color: white;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
 
-        .card:hover {
-            transform: scale(1.05);
-        }
+    a:hover {
+        background: #45a049;
+        transform: scale(1.05);
+    }
+</style>
 
-        .card a {
-            text-decoration: none;
-            color: #333;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .card a:hover {
-            color: #667eea;
-        }
-
-        .footer {
-            text-align: center;
-            color: white;
-            margin-top: 40px;
-        }
-    </style>
 </head>
-
 <body>
 
-<div class="header">
-    📚 Library Management System
-</div>
+<h2>Library Menu</h2>
 
-<div class="container">
-
-    <div class="card">
-        <a href="addBook.jsp">➕ Add Book</a>
-    </div>
-
-    <div class="card">
-        <a href="bookList.jsp">📖 View Books</a>
-    </div>
-
-    <div class="card">
-        <a href="search.jsp">🔍 Search Book</a>
-    </div>
-
-    <div class="card">
-        <a href="issue.jsp">📕 Issue Book</a>
-    </div>
-
-    <div class="card">
-        <a href="return.jsp">📗 Return Book</a>
-    </div>
-
-    <div class="card">
-        <a href="purchase.jsp">🛒 Purchase Book</a>
-    </div>
-
-</div>
-
-<div class="footer">
-    © 2026 Library System
+<div class="menu-container">
+    <a href="addBook.jsp">Add Book</a>
+    <a href="viewBooks.jsp">View Books</a>
+    <a href="purchaseBook.jsp">Purchase Book</a>
+    <a href="issueBook.jsp">Issue Book</a>
+    <a href="returnBook.jsp">Return Book</a>
+    <a href="searchBook.jsp">Search Book</a>
 </div>
 
 </body>
